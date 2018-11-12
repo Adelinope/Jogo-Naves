@@ -34,7 +34,7 @@ local function moveBg(dt)
     end
     if (bg2.y - display.contentHeight/2) > display.actualContentHeight then
         bg2:translate(0, -bg2.contentHeight * 2)
-    end
+    end    
 end 
 
 local function getDeltaTime()
@@ -180,11 +180,6 @@ local function colisaoGlobal(e)
 end
 Runtime:addEventListener("collision", colisaoGlobal)
 --FIM COLISÕES
-
-
-
-
-
 
 --[[  MOVE COM DEDOS
 local function ontouch( event )
